@@ -31,7 +31,13 @@ public class Main {
         }
     }
 
-    public static void countStaffSalary(Employee[] employees) {}
+    public static void countStaffSalary(Employee[] employees) {
+        int sum = 0;
+        for (Employee employee : employees) {
+            sum += employee.getSalaryStaff();
+        }
+        System.out.println("Затраты на выплату з/п в месяц " + sum);
+    }
 
     public static void averageSalary(Employee[] employees) {}
 
