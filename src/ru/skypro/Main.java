@@ -39,7 +39,14 @@ public class Main {
         System.out.println("Затраты на выплату з/п в месяц " + sum);
     }
 
-    public static void averageSalary(Employee[] employees) {}
+    public static void averageSalary(Employee[] employees) {
+        int sum = 0;
+        for (Employee employee : employees) {
+            sum += employee.getSalaryStaff();
+        }
+        int average = sum / employees.length;
+        System.out.println("Средняя з/п: " + average);
+    }
 
     public static void countAllStaff(Employee[] employees) {}
 
