@@ -48,7 +48,11 @@ public class Main {
         System.out.println("Средняя з/п: " + average);
     }
 
-    public static void countAllStaff(Employee[] employees) {}
+    public static void countAllStaff(Employee[] employees) {
+        for (Employee employee : employees) {
+            System.out.println("Сотрудники: " + employee.getStaff());
+        }
+    }
 
 
     public static void main(String[] args) {
