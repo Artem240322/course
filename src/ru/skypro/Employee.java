@@ -33,7 +33,7 @@ public class Employee {
     public String toString() {
         return "Ф.И.О сотрудника: " + staff +
                 "Зарплата сотрудника: " + salaryStaff +
-                "Номер департамента: " + departmentNumber +
+                " Номер департамента: " + departmentNumber +
                 "Индентификационный номер: " + id;
     }
 

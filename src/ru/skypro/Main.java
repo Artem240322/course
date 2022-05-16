@@ -25,7 +25,11 @@ public class Main {
         System.out.println("Сотрудник с max з/п: " + staffMan + maxSalary);
     }
 
-    public static void typeAllStaff(Employee[] employees) {}
+    public static void typeAllStaff(Employee[] employees) {
+        for (Employee employee : employees) {
+            System.out.println(employee);
+        }
+    }
 
     public static void countStaffSalary(Employee[] employees) {}
 
@@ -36,7 +40,7 @@ public class Main {
 
     public static void main(String[] args) {
         Employee [] employee = new Employee[10];
-        employee[0] = new Employee( " Черных Артем Викторович ", 50000, 1);
+        employee[0] = new Employee( "Черных Артем Викторович ", 50000, 1);
         employee[1] = new Employee("Иванов Иван Иванович ", 55000, 2);
         employee[2] = new Employee("Пертов Петр Петрович ", 60000, 3);
         employee[3] = new Employee("Сидоров Сидр Сидорович ", 65000, 4);
