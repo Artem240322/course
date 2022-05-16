@@ -7,7 +7,13 @@ public class Employee {
     int id;
     static int counter;
 
-    public Employee(String staff, int salaryStaff, int departmentNumber) {}
+    public Employee(String staff, int salaryStaff, int departmentNumber) {
+        this.staff = staff;
+        this.salaryStaff = salaryStaff;
+        this.departmentNumber = departmentNumber;
+        this.id = getCounter();
+        counter++;
+    }
 
     public static int getCounter() { return counter; }
 
