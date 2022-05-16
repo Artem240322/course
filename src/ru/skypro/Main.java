@@ -13,7 +13,17 @@ public class Main {
         System.out.println("Сотрудник с min зарплатой: " + minSalary + staffMan );
     }
 
-    public static void countMaxSalary(Employee[] employees) {}
+    public static void countMaxSalary(Employee[] employees) {
+        int maxSalary = employees[0].getSalaryStaff();
+        String staffMan = "";
+        for (Employee employee : employees) {
+            if (maxSalary < employee.getSalaryStaff()) {
+                maxSalary = employee.getSalaryStaff();
+                staffMan = employee.getStaff();
+            }
+        }
+        System.out.println("Сотрудник с max з/п: " + staffMan + maxSalary);
+    }
 
     public static void typeAllStaff(Employee[] employees) {}
 
